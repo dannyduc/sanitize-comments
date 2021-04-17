@@ -12,9 +12,12 @@ export class CommentComponent implements OnInit {
     created: new Date(),
     note:
       '<a href="https://attacker.com">ExternalLink</a>\n' +
+      "\n" +
       "NormalText\n" +
+      "\n" +
       '<a href=javascript:alert("0wned")>JSLink</a>\n' +
-      "<b>BoldText</>"
+      "\n" +
+      "<b>BoldText</b>"
   };
 
   constructor() {}
