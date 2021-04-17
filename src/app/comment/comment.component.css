@@ -1,3 +1,12 @@
+body {
+  font-family: -apple-system, "BlinkMacSystemFont", "Segoe UI", system-ui,
+    "Roboto", "Helvetica Neue", sans-serif;
+  color: #333;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
 textarea {
   display: block;
   width: 100%;
@@ -11,6 +20,21 @@ textarea {
   border: 1px solid transparent;
   outline: none;
   transition: background 0.3s;
+}
+
+textarea:hover {
+  background: #e4ebf3;
+}
+
+textarea:focus {
+  background: transparent;
+  border: 1px solid;
+}
+
+blockquote {
+  margin-left: 0;
+  padding: 12px 16px;
+  border-left: 1px solid #e4ebf3;
 }
 
 .HeaderComments {
