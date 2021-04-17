@@ -1,15 +1,13 @@
-import { Directive, HostListener } from '@angular/core';
+import { Directive, HostListener } from "@angular/core";
 
 @Directive({
-  selector: '[appExternalLink]'
+  selector: "[appExternalLink]"
 })
 export class ExternalLinkDirective {
-
-  @HostListener('click', ['$event'])
+  @HostListener("click", ["$event"])
   onClick(event) {
     event.preventDefault();
- }
+  }
 
-  constructor() { }
-
+  constructor() {}
 }
