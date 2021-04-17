@@ -6,7 +6,12 @@ import { Directive, HostListener } from "@angular/core";
 export class ExternalLinkDirective {
   @HostListener("click", ["$event"])
   onClick(event) {
-    event.preventDefault();
+    try {
+      const url = new URL(event.target.href);
+      if (url.hostname != location.hostname) {
+        event.preventDefault();
+      }
+    } catch (err) {}
   }
 
   constructor() {}

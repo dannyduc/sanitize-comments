@@ -9,6 +9,8 @@
 
 <div class="HeaderComments">Comments</div>
 
+<p>Default:</p>
+
 <div class="ItemComment">
   <strong>textContent:</strong><span [textContent]="comment.note"></span>
 </div>
@@ -16,6 +18,8 @@
 <div class="ItemComment">
   <strong>innerHtml: </strong><span [innerHTML]="comment.note"></span>
 </div>
+
+<p>Customize:</p>
 
 <div class="ItemComment">
   <strong>linkIntercept: </strong
@@ -26,6 +30,8 @@
   <strong>sanitizePipe:</strong
   ><span [innerHTML]="comment.note | sanitize"></span>
 </div>
+
+<p>None:</p>
 
 <div class="ItemComment">
   <strong>trustPipe:</strong
