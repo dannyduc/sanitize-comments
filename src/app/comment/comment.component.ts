@@ -11,7 +11,6 @@ export class CommentComponent implements OnInit {
     author: "Danny",
     created: new Date(),
     note:
-      '<script>alert("0wned")</script>\n' +
       '<a href="https://attacker.com">ExternalLink</a>\n' +
       "NormalText\n" +
       '<a href=javascript:alert("0wned")>JSLink</a>\n' +
