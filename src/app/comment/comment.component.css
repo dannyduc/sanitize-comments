@@ -1,0 +1,40 @@
+textarea {
+  width: 90%;
+  height: 75px;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 13px;
+  text-decoration: none;
+  color: #484848;
+  text-align: left;
+  resize: none;
+  padding: 10px;
+  outline: none;
+}
+
+.HeaderComments {
+  padding-left: 0px;
+  padding-right: 50px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+}
+
+.ItemComment {
+  margin: 15px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #ccc;
+}
+
+strong {
+  float: left;
+  width: 150px;
+}
+
+a {
+  font-size: 1.5emp;
+  font-weight: bold;
+  font-color: red;
+}

@@ -1,0 +1,28 @@
+<div>
+  <div class="HeaderComments">New Comment</div>
+  <textarea
+    id="comment"
+    [(ngModel)]="comment.note"
+    placeholder="comment"
+  ></textarea>
+</div>
+
+<div class="HeaderComments">Comments</div>
+
+<div class="ItemComment">
+  <strong>textContent:</strong><span [textContent]="comment.note"></span>
+</div>
+
+<div class="ItemComment">
+  <strong>innerHtml: </strong><span [innerHTML]="comment.note"></span>
+</div>
+
+<div class="ItemComment">
+  <strong>sanitizePipe:</strong
+  ><span [innerHTML]="comment.note | sanitize"></span>
+</div>
+
+<div class="ItemComment">
+  <strong>trustPipe:</strong
+  ><span [innerHTML]="comment.note | trust: 'html'"></span>
+</div>
