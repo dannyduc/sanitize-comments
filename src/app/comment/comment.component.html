@@ -30,6 +30,11 @@
   ><span [innerHTML]="comment.note | sanitize"></span>
 </div>
 
+<div class="ItemComment">
+  <strong>linkifyPipe:</strong
+  ><span [innerHTML]="comment.note | sanitize | linkify"></span>
+</div>
+
 <p>None:</p>
 
 <div class="ItemComment">
