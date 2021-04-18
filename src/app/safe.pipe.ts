@@ -8,18 +8,18 @@ import {
   SafeUrl
 } from "@angular/platform-browser";
 
-export type TrustPipeType = "html" | "style" | "script" | "url" | "resourceUrl";
+export type SafePipeType = "html" | "style" | "script" | "url" | "resourceUrl";
 
 @Pipe({
   name: "trust",
   pure: true
 })
-export class TrustPipe implements PipeTransform {
+export class SafePipe implements PipeTransform {
   constructor(protected sanitizer: DomSanitizer) {}
 
   public transform(
     value: string,
-    type: TrustPipeType
+    type: SafePipeType
   ): SafeHtml | SafeStyle | SafeScript | SafeUrl | SafeResourceUrl {
     switch (type) {
       case "html":
