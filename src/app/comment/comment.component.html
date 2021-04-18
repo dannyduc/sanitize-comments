@@ -21,23 +21,19 @@
 <p>Custom:</p>
 
 <div class="ItemComment">
-  <strong>linkIntercept: </strong
-  ><span appExternalLink [innerHTML]="comment.note"></span>
+  <strong>linkIntercept: </strong><span appExternalLink [innerHTML]="comment.note"></span>
 </div>
 
 <div class="ItemComment">
-  <strong>sanitizePipe:</strong
-  ><span [innerHTML]="comment.note | sanitize"></span>
+  <strong>sanitizePipe:</strong><span [innerHTML]="comment.note | sanitize"></span>
 </div>
 
 <div class="ItemComment">
-  <strong>sanitizePipe:</strong
-  ><span [innerHTML]="comment.note | sanitize | linkify"></span>
+  <strong>linkifyPipe:</strong><span [innerHTML]="comment.note | sanitize | linkify"></span>
 </div>
 
 <p>None:</p>
 
 <div class="ItemComment">
-  <strong>trustPipe:</strong
-  ><span [innerHTML]="comment.note | trust: 'html'"></span>
+  <strong>trustPipe:</strong><span [innerHTML]="comment.note | trust: 'html'"></span>
 </div>
